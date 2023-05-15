@@ -1,0 +1,29 @@
+{
+    "name": "Get Asset Balance",
+    "methods": [
+        {
+            "name": "asa_balance_with_reference_type",
+            "args": [
+                {
+                    "type": "account",
+                    "name": "account"
+                },
+                {
+                    "type": "asset",
+                    "name": "asa"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "asa_balance_with_slot_referencing",
+            "args": [],
+            "returns": {
+                "type": "uint64"
+            }
+        }
+    ],
+    "networks": {}
+}

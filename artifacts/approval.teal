@@ -1,0 +1,113 @@
+#pragma version 8
+intcblock 0 1
+bytecblock 0x151f7c75
+txn NumAppArgs
+intc_0 // 0
+==
+bnz main_l6
+txna ApplicationArgs 0
+pushbytes 0x55828497 // "asa_balance_with_reference_type(account,asset)uint64"
+==
+bnz main_l5
+txna ApplicationArgs 0
+pushbytes 0xd1aca7ba // "asa_balance_with_slot_referencing()uint64"
+==
+bnz main_l4
+err
+main_l4:
+txn OnCompletion
+intc_0 // NoOp
+==
+txn ApplicationID
+intc_0 // 0
+!=
+&&
+assert
+callsub asabalancewithslotreferencing_1
+store 3
+bytec_0 // 0x151f7c75
+load 3
+itob
+concat
+log
+intc_1 // 1
+return
+main_l5:
+txn OnCompletion
+intc_0 // NoOp
+==
+txn ApplicationID
+intc_0 // 0
+!=
+&&
+assert
+txna ApplicationArgs 1
+intc_0 // 0
+getbyte
+store 0
+txna ApplicationArgs 2
+intc_0 // 0
+getbyte
+store 1
+load 0
+load 1
+callsub asabalancewithreferencetype_0
+store 2
+bytec_0 // 0x151f7c75
+load 2
+itob
+concat
+log
+intc_1 // 1
+return
+main_l6:
+txn OnCompletion
+intc_0 // NoOp
+==
+bnz main_l8
+err
+main_l8:
+txn ApplicationID
+intc_0 // 0
+==
+assert
+intc_1 // 1
+return
+
+// asa_balance_with_reference_type
+asabalancewithreferencetype_0:
+proto 2 1
+intc_0 // 0
+frame_dig -2
+txnas Accounts
+frame_dig -1
+txnas Assets
+asset_holding_get AssetBalance
+store 5
+store 4
+load 5
+bnz asabalancewithreferencetype_0_l2
+intc_0 // 0
+return
+asabalancewithreferencetype_0_l2:
+load 4
+frame_bury 0
+retsub
+
+// asa_balance_with_slot_referencing
+asabalancewithslotreferencing_1:
+proto 0 1
+intc_0 // 0
+txna Accounts 0
+txna Assets 0
+asset_holding_get AssetBalance
+store 7
+store 6
+load 7
+bnz asabalancewithslotreferencing_1_l2
+intc_0 // 0
+return
+asabalancewithslotreferencing_1_l2:
+load 6
+frame_bury 0
+retsub

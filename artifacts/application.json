@@ -1,0 +1,70 @@
+{
+    "hints": {
+        "asa_balance_with_reference_type(account,asset)uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "asa_balance_with_slot_referencing()uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMQpieXRlY2Jsb2NrIDB4MTUxZjdjNzUKdHhuIE51bUFwcEFyZ3MKaW50Y18wIC8vIDAKPT0KYm56IG1haW5fbDYKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMApwdXNoYnl0ZXMgMHg1NTgyODQ5NyAvLyAiYXNhX2JhbGFuY2Vfd2l0aF9yZWZlcmVuY2VfdHlwZShhY2NvdW50LGFzc2V0KXVpbnQ2NCIKPT0KYm56IG1haW5fbDUKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMApwdXNoYnl0ZXMgMHhkMWFjYTdiYSAvLyAiYXNhX2JhbGFuY2Vfd2l0aF9zbG90X3JlZmVyZW5jaW5nKCl1aW50NjQiCj09CmJueiBtYWluX2w0CmVycgptYWluX2w0Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydApjYWxsc3ViIGFzYWJhbGFuY2V3aXRoc2xvdHJlZmVyZW5jaW5nXzEKc3RvcmUgMwpieXRlY18wIC8vIDB4MTUxZjdjNzUKbG9hZCAzCml0b2IKY29uY2F0CmxvZwppbnRjXzEgLy8gMQpyZXR1cm4KbWFpbl9sNToKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQppbnRjXzAgLy8gMApnZXRieXRlCnN0b3JlIDAKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgppbnRjXzAgLy8gMApnZXRieXRlCnN0b3JlIDEKbG9hZCAwCmxvYWQgMQpjYWxsc3ViIGFzYWJhbGFuY2V3aXRocmVmZXJlbmNldHlwZV8wCnN0b3JlIDIKYnl0ZWNfMCAvLyAweDE1MWY3Yzc1CmxvYWQgMgppdG9iCmNvbmNhdApsb2cKaW50Y18xIC8vIDEKcmV0dXJuCm1haW5fbDY6CnR4biBPbkNvbXBsZXRpb24KaW50Y18wIC8vIE5vT3AKPT0KYm56IG1haW5fbDgKZXJyCm1haW5fbDg6CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCj09CmFzc2VydAppbnRjXzEgLy8gMQpyZXR1cm4KCi8vIGFzYV9iYWxhbmNlX3dpdGhfcmVmZXJlbmNlX3R5cGUKYXNhYmFsYW5jZXdpdGhyZWZlcmVuY2V0eXBlXzA6CnByb3RvIDIgMQppbnRjXzAgLy8gMApmcmFtZV9kaWcgLTIKdHhuYXMgQWNjb3VudHMKZnJhbWVfZGlnIC0xCnR4bmFzIEFzc2V0cwphc3NldF9ob2xkaW5nX2dldCBBc3NldEJhbGFuY2UKc3RvcmUgNQpzdG9yZSA0CmxvYWQgNQpibnogYXNhYmFsYW5jZXdpdGhyZWZlcmVuY2V0eXBlXzBfbDIKaW50Y18wIC8vIDAKcmV0dXJuCmFzYWJhbGFuY2V3aXRocmVmZXJlbmNldHlwZV8wX2wyOgpsb2FkIDQKZnJhbWVfYnVyeSAwCnJldHN1YgoKLy8gYXNhX2JhbGFuY2Vfd2l0aF9zbG90X3JlZmVyZW5jaW5nCmFzYWJhbGFuY2V3aXRoc2xvdHJlZmVyZW5jaW5nXzE6CnByb3RvIDAgMQppbnRjXzAgLy8gMAp0eG5hIEFjY291bnRzIDAKdHhuYSBBc3NldHMgMAphc3NldF9ob2xkaW5nX2dldCBBc3NldEJhbGFuY2UKc3RvcmUgNwpzdG9yZSA2CmxvYWQgNwpibnogYXNhYmFsYW5jZXdpdGhzbG90cmVmZXJlbmNpbmdfMV9sMgppbnRjXzAgLy8gMApyZXR1cm4KYXNhYmFsYW5jZXdpdGhzbG90cmVmZXJlbmNpbmdfMV9sMjoKbG9hZCA2CmZyYW1lX2J1cnkgMApyZXRzdWI=",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {},
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "Get Asset Balance",
+        "methods": [
+            {
+                "name": "asa_balance_with_reference_type",
+                "args": [
+                    {
+                        "type": "account",
+                        "name": "account"
+                    },
+                    {
+                        "type": "asset",
+                        "name": "asa"
+                    }
+                ],
+                "returns": {
+                    "type": "uint64"
+                }
+            },
+            {
+                "name": "asa_balance_with_slot_referencing",
+                "args": [],
+                "returns": {
+                    "type": "uint64"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}
