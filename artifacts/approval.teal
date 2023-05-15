@@ -86,10 +86,7 @@ asset_holding_get AssetBalance
 store 5
 store 4
 load 5
-bnz asabalancewithreferencetype_0_l2
-intc_0 // 0
-return
-asabalancewithreferencetype_0_l2:
+assert
 load 4
 frame_bury 0
 retsub
@@ -104,10 +101,7 @@ asset_holding_get AssetBalance
 store 7
 store 6
 load 7
-bnz asabalancewithslotreferencing_1_l2
-intc_0 // 0
-return
-asabalancewithslotreferencing_1_l2:
+assert
 load 6
 frame_bury 0
 retsub
