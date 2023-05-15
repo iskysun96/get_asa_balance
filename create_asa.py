@@ -1,9 +1,6 @@
 import json
-import base64
-from algosdk.v2client import algod
-from algosdk import account, mnemonic
 from algosdk.transaction import *
-from beaker import sandbox, client
+from beaker import sandbox
 
 # Initialize an algod client
 algod_client = sandbox.get_algod_client()
@@ -53,16 +50,3 @@ except Exception as err:
 # ensuring that the creation transaction was confirmed,
 # then grabbing the asset id from the transaction.
 print("Transaction information: {}".format(json.dumps(confirmed_txn, indent=4)))
-# print("Decoded note: {}".format(base64.b64decode(
-#     confirmed_txn["txn"]["txn"]["note"]).decode()))
-# try:
-#     # Pull account info for the creator
-#     # account_info = algod_client.account_info(accounts[1]['pk'])
-#     # get asset_id from tx
-#     # Get the new asset's information from the creator account
-#     ptx = algod_client.pending_transaction_info(txid)
-#     asset_id = ptx["asset-index"]
-#     print_created_asset(algod_client, accounts[1]['pk'], asset_id)
-#     print_asset_holding(algod_client, accounts[1]['pk'], asset_id)
-# except Exception as e:
-#     print(e)
